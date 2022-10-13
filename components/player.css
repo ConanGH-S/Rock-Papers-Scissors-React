@@ -1,0 +1,15 @@
+main {
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    display: grid;
+    place-items: center;
+}
+form {
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: .5rem;
+    padding: 2rem;
+}
