@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-white: whitesmoke;
+    --green: #344e41;
+}
+#root {
+    background: var(--main-white);
+    height: 100vh;
+}
