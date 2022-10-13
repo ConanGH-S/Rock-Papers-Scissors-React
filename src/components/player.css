@@ -1,15 +1,71 @@
 main {
-    height: 100%;
-    width: 100%;
-    border: 1px solid red;
-    display: grid;
-    place-items: center;
+	background: var(--blue);
+	display: grid;
+	height: 100%;
+	place-items: center;
+	width: 100%;
 }
 form {
-    outline: 1px solid red;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: .5rem;
-    padding: 2rem;
+	background: var(--main-white);
+	border-radius: 12px;
+	box-shadow: 5px 5px 5px 0 #222;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 3rem 3rem 2rem 3rem;
+	width: 50%;
+}
+form label {
+	font-size: 20px;
+}
+form input {
+	background: none;
+	border: none;
+	border-bottom: 2px solid #000;
+	outline: none;
+	padding: 0.5rem 1rem;
+}
+form input:focus::placeholder {
+	visibility: hidden;
+}
+form button {
+	align-self: flex-end;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	margin: 10px 10px 0 0;
+	position: relative;
+	transition: color 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+form button:hover {
+	color: var(--blue);
+}
+form button::before {
+	background: #000;
+	bottom: -3px;
+	content: '';
+	height: 2px;
+	position: absolute;
+	right: 50%;
+	transition: width 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	width: 0%;
+}
+form button:hover::before {
+	background: var(--blue);
+	width: 50%;
+}
+form button::after {
+	background: #000;
+	bottom: -3px;
+	content: '';
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	transition: width 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94), background 300ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	width: 0%;
+}
+form button:hover::after {
+	background: var(--blue);
+	width: 50%;
 }

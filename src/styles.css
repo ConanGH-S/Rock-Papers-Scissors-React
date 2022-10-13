@@ -1,11 +1,17 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(./fonts/Montserrat-Medium.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 :root {
     --main-white: whitesmoke;
-    --green: #344e41;
+    --blue: #457b9d;
 }
 #root {
     background: var(--main-white);
